@@ -1,0 +1,28 @@
+/* Tiles with unequal height */
+.parent-div {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.chile-div {
+  break-inside: avoid;
+  margin-bottom: 24px;
+}
+
+/* Tiles with equal height */
+.parent-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: wrap;
+  -ms-flex-flow: row wrap;
+}
+
+.chile-div {
+  width: 30%;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 0 24px 0;
+}
